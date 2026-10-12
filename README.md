@@ -40,8 +40,8 @@ FastAPI also generates a separate text export for Samsung Notes.
 ## Current Status
 **Stage:** Initial setup and project planning
 
-- [ ] Set up the Python environment and FastAPI application
-- [ ] Create the first health-check endpoint
+- [✅] Set up the Python environment and FastAPI application
+- [✅] Create the first health-check endpoint
 - [ ] Connect PostgreSQL
 - [ ] Implement trip storage and review
 - [ ] Integrate Gmail OAuth and receipt retrieval
@@ -49,8 +49,22 @@ FastAPI also generates a separate text export for Samsung Notes.
 - [ ] Generate monthly Samsung Notes text
 - [ ] Add tests and error handling
 
-## Learning Notes
-This README will also document the concepts learned during development, why they are needed, how they are implemented, and any bugs and solutions discovered along the way.
-
 ## Security
 API credentials, OAuth client secrets, refresh tokens, database passwords, and other private configuration must not be committed to GitHub.
+
+
+
+## Local Setup
+
+### Prerequisites
+- Python installed
+- Git installed
+
+### Installation
+1. Clone the repository.
+2. Create and activate a Python virtual environment.
+3. Install dependencies: python -m pip install -r requirements.txt
+4. Start the development server: uvicorn app.main:app --reload
+5. Open `http://127.0.0.1:8000/docs` to view the API documentation.
+
+**Note:** These instructions will be verified once the initial FastAPI application is running successfully.
